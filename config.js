@@ -107,26 +107,6 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'example',
-            alignment: 'center',
-            hidden: false,
-            title: '',
-            description: '',
-            image: './assets/example.png',
-            location: {
-                center: [-89.57439, 31.38369],
-                zoom: 5.79,
-                pitch: 42,
-                bearing: 0.00,
-                speed: 0.05,
-            },
-            mapAnimation: 'flyTo',
-            rotateAnimation: true,
-            callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
-        },
-        {
             id: 'jackson-heights',
             alignment: 'left',
             hidden: false,
