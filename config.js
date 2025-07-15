@@ -98,7 +98,7 @@ var config = {
                 zoom: 5.79,
                 pitch: 42,
                 bearing: 0.00,
-                speed: 0.05,
+                speed: 0.001,
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -223,7 +223,7 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'polygons-dh2025',
-                    opacity: 0.5,
+                    opacity: 0,
                     duration: 5000
                 },
                 {
@@ -264,23 +264,28 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'film',
+            id: 'british-context',
             alignment: 'left',
             hidden: false,
             title: 'Transnational/Translocal Colombians',
             image: '',
             description: 'Depicted: Brixton, Elephant & Castle, Seven Sisters',
             location: {
-                center: [-0.19139, 51.51423],
-                zoom: 10.85,
-                pitch: 0,
-                bearing: 0,
-                speed: 0.5
+                center: [-0.12575, 51.53805],
+                zoom: 11.60,
+                pitch: 15,
+                bearing: 76,
+                speed: 0.05
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [],
+            onChapterEnter: [{
+                layer: 'polygons-dh2025',
+                opacity: 0.5,
+                duration: 5000
+            }
+        ],
             onChapterExit: []
         },
         {
@@ -295,7 +300,7 @@ var config = {
                 zoom: 11.29,
                 pitch: 0,
                 bearing: 0,
-                speed: 0.5
+                speed: 0.05
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
